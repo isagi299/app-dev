@@ -1,0 +1,12 @@
+1. flutter development - 20 days - 1 hour
+2. binary search playlist - 30 days - 1 video
+3. 20 problem solve(800-900 rated) - 20 days - 1 problem
+4.finished a book - 1 month - total page / 30
+5. dsa playlist - 1 year
+
+to-do
+flutter --> https://youtu.be/CzRQ9mnmh44?si=PNWjRvHpvPTu844A&t=22304
+binary search --> https://youtu.be/MHf6awe89xw?si=uFQLfz1tiRE_mOYc
+problem solve --> https://codeforces.com/problemset/problem/1922/A
+book --> 4 page যুক্তিফাঁদে ফড়িং - চমক হাসান
+dsa --> https://youtu.be/FPu9Uld7W-E?si=5lSxjp5o8O3D-TD2
