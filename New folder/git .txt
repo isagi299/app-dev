@@ -1,0 +1,44 @@
+git config --global user.name "name" --> to set the username
+git config --global user.email "email" --> to set email
+git config --list --> to know the username and useremail
+git --version --> to know git version and check git is working or not
+clear --> clear the terminal
+git clone <-some link-> --> to clone a github repo into the local device
+cd -- to change directory(folder)
+ls --> to know the all files of the current directory
+ls -a --> to know the all files(including hidden file) of the current directory
+git status --> to know status of the current directory
+git add <file name> --> to move the file to stage
+git add . -- to move all the file to stage
+git commit -m "message" -- to save the record
+git push origin main --> to upload local repo to remote repo
+cd .. --> to go return from current directory
+mkdir --> to make a directory or folder
+git init --> initialing git in current directory
+git remote add origin <link> --> to add a file in remote
+git remote -v --> to verify the remote
+git branch --> to know which branch we are in github
+git branch -M "new name" --> to rename a branch
+git push -u origin main --> to upload local repo to remote repo (-u for shortcut)
+git checkout -b branch_name --> to create a new branch 
+git checkout branch_name --> to go the branch from previous one
+git checkout -d branch_name --> to delete a branch
+git diff branch_name --> to compare the current branch with the branch
+git pull origin branch_name --> to fetch and downlod content from a remote repo and update local repo
+merge a branch to another branch in github --> by PR(pull request)
+merge conflicts --> when git unable to resove differences in code between two commits
+git merge branch_name --> merge the current branch to the given branch
+git reset file_name --> to reset a file from stage (added but not commited)
+git reset HEAD~1 --> to reset commit
+git log --> to check all commit
+to quit from vim --> press q
+fork to copy a code to our github
+touch file_name.extension --> to create a file
+git checkout file_name --> to bring back a file
+git checkout -f --> to bring back all the file
+
+workflow :
+github repo -> clone -> change -> add -> commit -> push
+
+four stage -- untracked(U) modified(M) staged(S) unmodified
+
