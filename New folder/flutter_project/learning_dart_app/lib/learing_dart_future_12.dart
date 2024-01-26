@@ -4,7 +4,7 @@ void main() //async // if we want to delay only the future function but rest of 
   // future --> helps to run a task without blocking
   // final friend = await fn();
   print("hello world");
-  // final friend = await fndelay2sec();
+  // final friend = await fndelay2sec(); // to acess value of future , we have to use await
   // print(friend);
   fndelay2sec().then((value) { // it will delay the future functon only
     print(value);
