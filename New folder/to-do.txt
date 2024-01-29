@@ -1,3 +1,4 @@
+// to update flutter run the command in cmd --> flutter update
 1. flutter development - 20 days - 1 hour
 2. binary search playlist - 30 days - 1 video
 3. 20 problem solve(800-900 rated) - 20 days - 1 problem
@@ -5,7 +6,7 @@
 5. dsa playlist - 1 year
 
 to-do
-flutter --> https://youtu.be/CzRQ9mnmh44?si=1MPs3OzAM93q2Ve6&t=27744
+flutter --> https://youtu.be/CzRQ9mnmh44?si=Jqoz5PD2m3yJUxlM
 binary search --> https://youtu.be/MHf6awe89xw?si=uFQLfz1tiRE_mOYc
 problem solve --> https://codeforces.com/problemset/problem/1922/A
 book --> 4 page যুক্তিফাঁদে ফড়িং - চমক হাসান

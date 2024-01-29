@@ -46,7 +46,7 @@ void main()
   <returnType> FunctionName(argument)
   {
     do work;
-    return data; // if void , not necessary
+    return data; // if return_type is void , not necessary
   }
 
   to work the function put FunctionName(argument) in main function
