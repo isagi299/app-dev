@@ -1,125 +1,47 @@
 import 'package:flutter/material.dart';
+import 'Currency_Material_Page.dart';
 
-void main() {
+// import 'package:package_name/import_action; // to import something
+
+void main()
+{
+  // runApp() is the functin which command flutter to start running the app or start
+  // runApp() fuction need widget
+  // widget is the building block of ui.they are resposible for what the ui look like
+  // to show some text in app --> Text()
   runApp(const MyApp());
+  // const after widgets means this widget doesn't need to rebuild
+  // if you hover over a function or text it will show all its parameter and functionality you can use for
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// widget is one kind of class
+/*
+  Types of widgets in terms of UI
+  1. StatelessWidget --> where state is immutable(cannot change the data)
+  2. StatefulWidget --> where state is mutable( can change the data )
+  3. InheritedWidget
 
-  // This widget is the root of your application.
+  # State(data or written info within a app without button or interface) --> determines how  widgets should look like,render or behave
+
+  // there are two types of design guideline -->
+  1. material design --> Android (MaterialApp()) if we want to add this --> MaterialApp()
+  2. Cupertino design --> Apple(IOS) (CupertinoApp()) if we want to add this --> CupertinoApp()
+*/
+// we can create our own custom widget -->
+
+class MyApp extends StatelessWidget{
+  const MyApp({ super.key });
+  // key is a class that helps flutter indentify and differentiate between widgets
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+  Widget build(BuildContext context){
+    // return const Text("hello world!!",textDirection:TextDirection.ltr,textAlign: TextAlign.center,);
+    // difference between MaterialApp and Scaffold --> https://youtu.be/CzRQ9mnmh44?si=Bc9CTL2uvG6qZYlB&t=33559
+    return const MaterialApp(
+      home: CurrencyMaterialPage(), // have to import the file
     );
   }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
-    return Scaffold(
-      appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
-  }
+  // quick fix a problem in vscode --> CTRL + .
+  // refacting to wrap a widget or remove it easily. it is a feature of vscode
+  // Widget Tree --> wrap widget with another widger like --> MaterialApp--Scaffold--Center--Text
+  // material app doesn't have enough customization option. so if we want to add everything related to material design then we need Scaffold();
 }
